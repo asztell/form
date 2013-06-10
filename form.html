@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head><title>FORM</title>
+		<style type="text/css">
+
+			body{
+			}
+
+			br{
+				display:block;
+				margin:1px 0;
+			}
+
+			#form{
+				background-color:#eeffff;
+				border:3px solid #bbccff;
+				border-radius:15px;
+				padding:24px;
+				width:480px;
+				height:305px;
+				margin:auto auto;
+			}
+			
+			#inputFields a{
+				font-size:13px;
+				color:#6699ff;
+				margin-top:15px;
+			}
+			
+			#inputFields #moveType{
+				width:130px;
+				margin-top:-20px;
+			}
+
+			#inputFields #moveDate input{
+				margin-top:-20px;
+			}
+			
+			#inputFields #moveDate #day{
+				width:30px;
+			}
+
+			#inputFields #moveDate #month{
+				width:90px;
+			}
+			
+			#inputFields #residenceType, #inputFields #numberOfRooms{
+				width:105px;
+				margin-top:-15px;
+			}
+			
+			#movingFrom #movingFromText, #movingTo #movingToText{
+				width:90px;
+				margin-top:-15px;
+			}
+			
+			#inputFields #movingFrom{
+				float:left;
+			}
+			
+			#inputFields #movingTo{
+				float:right;
+				margin-right:50px;
+			}
+
+			#inputFields #resTypeDiv{
+				float:left;
+			}
+
+			#inputFields #numOfRoomsDiv{
+				float:right;
+				margin-right:30px;
+			}
+
+			#inputFields{
+				width:260px;
+				height:290px;
+				margin-top:-25px;
+				position:absolute;
+				line-height:1px;
+				border:0px solid gray;
+			}
+
+			#textField{
+				position:relative;
+				float:right;
+				width:200px;
+				height:274px;
+				color:gray;
+				background-color:white;
+				border:1px solid #eeddff;
+				border-radius:3px;
+				margin-top:-5px;
+				margin-right:-10px;
+				padding-top:-18px;
+				padding-left:15px;
+			}
+
+			#textField h5, #textField h3, #textField a{
+				margin:8px 0px;
+			}
+
+			#form h2{
+				color:#6699ff;
+				font-style:italic;
+				margin-top:-10px;
+			}
+
+			.continue{
+				-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+				-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+				box-shadow:inset 0px 1px 0px 0px #ffffff;
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(0.5, #ededed), color-stop(1, #dfdfdf) );
+				background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+				background-color:#ededed;
+				-moz-border-radius:12px;
+				-webkit-border-radius:12px;
+				border-radius:15px;
+				border:2px solid #6666ff;
+				display:inline-block;
+				color:#6666ff;
+				font-family:arial;
+				font-size:17px;
+				font-weight:bold;
+				padding:6px 24px;
+				margin:20px 0px;
+				text-decoration:none;
+				text-shadow:1px 1px 0px #ffffff;
+				background-image: -webkit-linear-gradient(top, #FFF8D6, #F2BF16);
+				background-image: -moz-linear-gradient(top, #FFF8D6, #F2BF16);
+				background-image: -ms-linear-gradient(top, #FFF8D6, #F2BF16);
+				background-image: -o-linear-gradient(top, #FFF8D6, #F2BF16);
+				background-image: linear-gradient(to bottom, #FFF8D6, #F2BF16);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFF8D6, endColorstr=#F2BF16);
+			}
+
+			.continue:hover {
+				background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+				background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+				filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+				background-color:#dfdfdf;
+				background-image: -webkit-linear-gradient(top, #F2BF16, #FFF8D6);
+				background-image: -moz-linear-gradient(top, #F2BF16, #FFF8D6);
+				background-image: -ms-linear-gradient(top, #F2BF16, #FFF8D6);
+				background-image: -o-linear-gradient(top, #F2BF16, #FFF8D6);
+				background-image: linear-gradient(to bottom, #F2BF16, #FFF8D6);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFF8D6, endColorstr=#F2BF16);
+			}
+
+			.continue:active {
+				position:relative;
+				top:1px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="form">
+			<form>
+				<h2>Start getting your free moving quotes</h2>
+					<div id="inputFields">
+						<h4>Select Your Move Type</h4>
+						<select id="moveType" name="MoveType" value="Select">
+							<option value="Type 1">Type 1</option>
+							<option value="Type 2">Type 2</option>
+							<option value="Type 3">Type 3</option>
+							<option value="Type 4">Type 4</option>
+							<option value="Type 5">Type 5</option>
+						</select>
+						<a href="www.which_is_right.com">Which is right for me?</a><br>
+						<div id="moveDate">
+							<h4>Move Date (approximate)</h4>
+							<input id="month" type="text" value="Month">
+							<input id="day" type="text" value="Day"><br><br>
+						</div>
+						<div id="movingFrom">
+							<h4>Moving From</h4>
+							<input id="movingFromText" type="text" value="ZIP Code"><br>
+							<a href="www.zipcodefinder.com">ZIP Code Finder</a>
+						</div>
+						<div id="movingTo">
+							<h4>Moving To</h4>
+							<input id="movingToText" type="text" value="ZIP Code"><br>
+							<a href="www.zipcodefinder.com">ZIP Code Finder</a>
+						</div>
+						<div id="resTypeDiv">
+							<h4>Residence Type</h4>
+							<select id="residenceType" name="ResidenceType" value="Select">
+								<option value="Type 1">Type 1</option>
+								<option value="Type 2">Type 2</option>
+								<option value="Type 3">Type 3</option>
+								<option value="Type 4">Type 4</option>
+								<option value="Type 5">Type 5</option>
+							</select>
+						</div>
+						<div id="numOfRoomsDiv">
+							<h4># of Rooms</h4>
+							<select id="numberOfRooms" name="#ofRooms" value="Select">
+								<option value="Type 1">Type 1</option>
+								<option value="Type 2">Type 2</option>
+								<option value="Type 3">Type 3</option>
+								<option value="Type 4">Type 4</option>
+								<option value="Type 5">Type 5</option>
+							</select><br>
+						</div>
+						<input type="submit" class="continue" value="CONTINUE >>">
+					</div>
+					<div id="textField">
+						<h3>The Difference</h3>
+						<h5><b>Safety</b> - Our network consists of only fully licensed &amp; insured movers.</h5>
+						<h5><b>Quality</b> - All moving companies must pass our strict 28 point inspection process to ensure quality service.</h5>
+						<h5><b>Security</b> - GigaMoves does not permit moving companies to broker or sell customer information.</h5>
+						<a href="www.privacy_policy.com">Privacy Policy</a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
