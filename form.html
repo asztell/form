@@ -4,6 +4,7 @@
 		<style type="text/css">
 
 			body{
+				font-family:"Arial", Sans serif;
 			}
 
 			br{
@@ -16,19 +17,23 @@
 				border:3px solid #bbccff;
 				border-radius:15px;
 				padding:24px;
-				width:480px;
-				height:305px;
+				width:460px;
+				height:292px;
 				margin:auto auto;
 			}
-			
+
 			#inputFields a{
-				font-size:13px;
+				font-size:12px;
 				color:#6699ff;
 				margin-top:15px;
 			}
 			
+			#inputFields h5{
+				font-weight:bold;
+			}
+			
 			#inputFields #moveType{
-				width:130px;
+				width:115px;
 				margin-top:-20px;
 			}
 
@@ -49,8 +54,12 @@
 				margin-top:-15px;
 			}
 			
+			#resTypeDiv, #numOfRoomsDiv{
+				margin-top:10px;
+			}
+			
 			#movingFrom #movingFromText, #movingTo #movingToText{
-				width:90px;
+				width:80px;
 				margin-top:-15px;
 			}
 			
@@ -60,7 +69,7 @@
 			
 			#inputFields #movingTo{
 				float:right;
-				margin-right:50px;
+				margin-right:65px;
 			}
 
 			#inputFields #resTypeDiv{
@@ -69,22 +78,22 @@
 
 			#inputFields #numOfRoomsDiv{
 				float:right;
-				margin-right:30px;
+				margin-right:25px;
 			}
 
 			#inputFields{
-				width:260px;
+				width:250px;
 				height:290px;
 				margin-top:-25px;
 				position:absolute;
 				line-height:1px;
-				border:0px solid gray;
+				border:1px solid gray;
 			}
 
 			#textField{
 				position:relative;
 				float:right;
-				width:200px;
+				width:205px;
 				height:274px;
 				color:gray;
 				background-color:white;
@@ -93,14 +102,25 @@
 				margin-top:-5px;
 				margin-right:-10px;
 				padding-top:-18px;
-				padding-left:15px;
+				padding-left:10px;
 			}
 
-			#textField h5, #textField h3, #textField a{
-				margin:8px 0px;
+			#textField h4{
+				margin:9px 0px;
+				
+			}
+			
+			#textField h5 {
+				margin:9px 0px;
+				font-size:12px;
+			}
+			
+			#textField a{
+				font-size:12px;
+				margin:9px 0px;
 			}
 
-			#form h2{
+			#form h3{
 				color:#6699ff;
 				font-style:italic;
 				margin-top:-10px;
@@ -155,9 +175,9 @@
 	<body>
 		<div id="form">
 			<form>
-				<h2>Start getting your free moving quotes</h2>
+				<h3>Start getting your free moving quotes</h3>
 					<div id="inputFields">
-						<h4>Select Your Move Type</h4>
+						<h5>Select Your Move Type</h5>
 						<select id="moveType" name="MoveType" value="Select">
 							<option value="Type 1">Type 1</option>
 							<option value="Type 2">Type 2</option>
@@ -167,22 +187,22 @@
 						</select>
 						<a href="www.which_is_right.com">Which is right for me?</a><br>
 						<div id="moveDate">
-							<h4>Move Date (approximate)</h4>
+							<h5>Move Date (approximate)</h5>
 							<input id="month" type="text" value="Month">
 							<input id="day" type="text" value="Day"><br><br>
 						</div>
 						<div id="movingFrom">
-							<h4>Moving From</h4>
+							<h5>Moving From</h5>
 							<input id="movingFromText" type="text" value="ZIP Code"><br>
 							<a href="www.zipcodefinder.com">ZIP Code Finder</a>
 						</div>
 						<div id="movingTo">
-							<h4>Moving To</h4>
+							<h5>Moving To</h5>
 							<input id="movingToText" type="text" value="ZIP Code"><br>
 							<a href="www.zipcodefinder.com">ZIP Code Finder</a>
 						</div>
 						<div id="resTypeDiv">
-							<h4>Residence Type</h4>
+							<h5>Residence Type</h5>
 							<select id="residenceType" name="ResidenceType" value="Select">
 								<option value="Type 1">Type 1</option>
 								<option value="Type 2">Type 2</option>
@@ -192,7 +212,7 @@
 							</select>
 						</div>
 						<div id="numOfRoomsDiv">
-							<h4># of Rooms</h4>
+							<h5># of Rooms</h5>
 							<select id="numberOfRooms" name="#ofRooms" value="Select">
 								<option value="Type 1">Type 1</option>
 								<option value="Type 2">Type 2</option>
@@ -204,7 +224,7 @@
 						<input type="submit" class="continue" value="CONTINUE >>">
 					</div>
 					<div id="textField">
-						<h3>The Difference</h3>
+						<h4>The Difference</h4>
 						<h5><b>Safety</b> - Our network consists of only fully licensed &amp; insured movers.</h5>
 						<h5><b>Quality</b> - All moving companies must pass our strict 28 point inspection process to ensure quality service.</h5>
 						<h5><b>Security</b> - GigaMoves does not permit moving companies to broker or sell customer information.</h5>
