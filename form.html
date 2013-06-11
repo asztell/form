@@ -5,6 +5,7 @@
 
 			body{
 				font-family:"Arial", Sans serif;
+				background-color:#eeffff;
 			}
 
 			br{
@@ -16,12 +17,29 @@
 				display:block;
 			}
 			
+			#curved_arrow{
+				z-index:1;
+				position:absolute;
+				margin-left:5.5px;
+				margin-top:33px;
+			}
+			
+			#container{
+				width:550px;
+				height:361px;
+				background-color:white;
+				margin:auto auto;
+			}
+			
 			#outer{
 				width:499px;
 				height:341px;
-				border:3px solid #ccccff;
+				border:3px solid #c6d4e3;
 				border-radius:15px;
 				margin:auto auto;
+				float:right;
+				margin-right:8px;
+				margin-top:8px;
 			}
 			
 			#form{
@@ -201,69 +219,72 @@
 		</style>
 	</head>
 	<body>
-		<div id="outer">
-			<div id="form">
-				<form>
-					<h3>Start getting your free moving quotes</h3>
-						<div id="inputFields">
-							<h5>Select Your Move Type</h5>
-							<select id="moveType" name="MoveType" value="Select">
-								<option value="Type 1">Type 1</option>
-								<option value="Type 2">Type 2</option>
-								<option value="Type 3">Type 3</option>
-								<option value="Type 4">Type 4</option>
-								<option value="Type 5">Type 5</option>
-							</select>
-							<a href="www.which_is_right.com">Which is right for me?</a><br>
-							<div id="moveDate">
-								<h5>Move Date (approximate)</h5>
-								<input id="month" type="text" value="Month">
-								<input id="day" type="text" value="Day"><br><br>
-							</div>
-							<div id="movingFrom">
-								<h5>Moving From</h5>
-								<input id="movingFromText" type="text" value="ZIP Code"><br>
-								<div id="zipCodeFinder">
-									<a href="www.zipcodefinder.com">ZIP Code Finder</a>
-								</div>
-							</div>
-							<div id="movingTo">
-								<h5>Moving To</h5>
-								<input id="movingToText" type="text" value="ZIP Code"><br>
-								<div id="zipCodeFinder">
-									<a href="www.zipcodefinder.com">ZIP Code Finder</a>
-								</div>
-							</div>
-							<div id="resTypeDiv">
-								<h5>Residence Type</h5>
-								<select id="residenceType" name="ResidenceType" value="Select">
+		<div id="container">
+			<img id="curved_arrow" src="curved_arrow.jpg" alt="arrow" width="57" height="81">
+			<div id="outer">
+				<div id="form">
+					<form>
+						<h3>Start getting your free moving quotes</h3>
+							<div id="inputFields">
+								<h5>Select Your Move Type</h5>
+								<select id="moveType" name="MoveType" value="Select">
 									<option value="Type 1">Type 1</option>
 									<option value="Type 2">Type 2</option>
 									<option value="Type 3">Type 3</option>
 									<option value="Type 4">Type 4</option>
 									<option value="Type 5">Type 5</option>
 								</select>
+								<a href="www.which_is_right.com">Which is right for me?</a><br>
+								<div id="moveDate">
+									<h5>Move Date (approximate)</h5>
+									<input id="month" type="text" value="Month">
+									<input id="day" type="text" value="Day"><br><br>
+								</div>
+								<div id="movingFrom">
+									<h5>Moving From</h5>
+									<input id="movingFromText" type="text" value="ZIP Code"><br>
+									<div id="zipCodeFinder">
+										<a href="www.zipcodefinder.com">ZIP Code Finder</a>
+									</div>
+								</div>
+								<div id="movingTo">
+									<h5>Moving To</h5>
+									<input id="movingToText" type="text" value="ZIP Code"><br>
+									<div id="zipCodeFinder">
+										<a href="www.zipcodefinder.com">ZIP Code Finder</a>
+									</div>
+								</div>
+								<div id="resTypeDiv">
+									<h5>Residence Type</h5>
+									<select id="residenceType" name="ResidenceType" value="Select">
+										<option value="Type 1">Type 1</option>
+										<option value="Type 2">Type 2</option>
+										<option value="Type 3">Type 3</option>
+										<option value="Type 4">Type 4</option>
+										<option value="Type 5">Type 5</option>
+									</select>
+								</div>
+								<div id="numOfRoomsDiv">
+									<h5># of Rooms</h5>
+									<select id="numberOfRooms" name="#ofRooms" value="Select">
+										<option value="Type 1">Type 1</option>
+										<option value="Type 2">Type 2</option>
+										<option value="Type 3">Type 3</option>
+										<option value="Type 4">Type 4</option>
+										<option value="Type 5">Type 5</option>
+									</select><br>
+								</div>
+								<input type="submit" class="continue" value="CONTINUE >>">
 							</div>
-							<div id="numOfRoomsDiv">
-								<h5># of Rooms</h5>
-								<select id="numberOfRooms" name="#ofRooms" value="Select">
-									<option value="Type 1">Type 1</option>
-									<option value="Type 2">Type 2</option>
-									<option value="Type 3">Type 3</option>
-									<option value="Type 4">Type 4</option>
-									<option value="Type 5">Type 5</option>
-								</select><br>
-							</div>
-							<input type="submit" class="continue" value="CONTINUE >>">
+							<div id="textField">
+								<h4>The Difference</h4>
+								<h5><b>Safety</b> - Our network consists of <span>only fully licensed &amp; insured</span> <span>movers.</span></h5>
+								<h5><b>Quality</b> - All moving companies <span>must pass our strict 28 point</span> <span>inspection process to ensure</span> quality service.</h5>
+								<h5><b>Security</b> - GigaMoves does not permit moving companies to <span>broker or sell customer</span><span>information.</span></h5>
+								<a href="www.privacy_policy.com">Privacy Policy</a>
 						</div>
-						<div id="textField">
-							<h4>The Difference</h4>
-							<h5><b>Safety</b> - Our network consists of <span>only fully licensed &amp; insured</span> <span>movers.</span></h5>
-							<h5><b>Quality</b> - All moving companies <span>must pass our strict 28 point</span> <span>inspection process to ensure</span> quality service.</h5>
-							<h5><b>Security</b> - GigaMoves does not permit moving companies to <span>broker or sell customer</span><span>information.</span></h5>
-							<a href="www.privacy_policy.com">Privacy Policy</a>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</div>
 	</body>
