@@ -16,18 +16,26 @@
 				display:block;
 			}
 			
-			#form{
-				background-color:#eeffff;
+			#outer{
+				width:499px;
+				height:341px;
 				border:3px solid #ccccff;
 				border-radius:15px;
+				margin:auto auto;
+			}
+			
+			#form{
+				background-color:#eeffff;
+				border-radius:15px;
+				border:3px solid #ffffff;
 				padding:24px;
-				width:455px;
-				height:295px;
+				width:445px;
+				height:287px;
 				margin:auto auto;
 			}
 
 			#inputFields a{
-				font-size:12px;
+				font-size:11px;
 				color:#5f9fbf;
 				margin-top:15px;
 			}
@@ -40,7 +48,11 @@
 				width:115px;
 				margin-top:-20px;
 			}
-
+			
+			#inputFields #moveDate{
+				margin-top:-6px;
+			}
+			
 			#inputFields #moveDate input{
 				margin-top:-20px;
 			}
@@ -54,7 +66,7 @@
 			}
 			
 			#inputFields #residenceType, #inputFields #numberOfRooms{
-				width:105px;
+				width:100px;
 				margin-top:-15px;
 			}
 			
@@ -69,20 +81,28 @@
 			
 			#inputFields #movingFrom{
 				float:left;
+				margin-top:-6px;
 			}
 			
 			#inputFields #movingTo{
 				float:right;
 				margin-right:65px;
+				margin-top:-6px;
+			}
+			
+			#zipCodeFinder{
+				margin-top:7px;
 			}
 
 			#inputFields #resTypeDiv{
 				float:left;
+				margin-top:2px;
 			}
 
 			#inputFields #numOfRoomsDiv{
 				float:right;
-				margin-right:25px;
+				margin-right:35px;
+				margin-top:2px;
 			}
 
 			#inputFields{
@@ -98,8 +118,8 @@
 				position:relative;
 				float:right;
 				width:200px;
-				height:274px;
-				color:gray;
+				height:268px;
+				color:black;
 				background-color:white;
 				border:1px solid #eeddff;
 				border-radius:3px;
@@ -181,64 +201,70 @@
 		</style>
 	</head>
 	<body>
-		<div id="form">
-			<form>
-				<h3>Start getting your free moving quotes</h3>
-					<div id="inputFields">
-						<h5>Select Your Move Type</h5>
-						<select id="moveType" name="MoveType" value="Select">
-							<option value="Type 1">Type 1</option>
-							<option value="Type 2">Type 2</option>
-							<option value="Type 3">Type 3</option>
-							<option value="Type 4">Type 4</option>
-							<option value="Type 5">Type 5</option>
-						</select>
-						<a href="www.which_is_right.com">Which is right for me?</a><br>
-						<div id="moveDate">
-							<h5>Move Date (approximate)</h5>
-							<input id="month" type="text" value="Month">
-							<input id="day" type="text" value="Day"><br><br>
-						</div>
-						<div id="movingFrom">
-							<h5>Moving From</h5>
-							<input id="movingFromText" type="text" value="ZIP Code"><br>
-							<a href="www.zipcodefinder.com">ZIP Code Finder</a>
-						</div>
-						<div id="movingTo">
-							<h5>Moving To</h5>
-							<input id="movingToText" type="text" value="ZIP Code"><br>
-							<a href="www.zipcodefinder.com">ZIP Code Finder</a>
-						</div>
-						<div id="resTypeDiv">
-							<h5>Residence Type</h5>
-							<select id="residenceType" name="ResidenceType" value="Select">
+		<div id="outer">
+			<div id="form">
+				<form>
+					<h3>Start getting your free moving quotes</h3>
+						<div id="inputFields">
+							<h5>Select Your Move Type</h5>
+							<select id="moveType" name="MoveType" value="Select">
 								<option value="Type 1">Type 1</option>
 								<option value="Type 2">Type 2</option>
 								<option value="Type 3">Type 3</option>
 								<option value="Type 4">Type 4</option>
 								<option value="Type 5">Type 5</option>
 							</select>
+							<a href="www.which_is_right.com">Which is right for me?</a><br>
+							<div id="moveDate">
+								<h5>Move Date (approximate)</h5>
+								<input id="month" type="text" value="Month">
+								<input id="day" type="text" value="Day"><br><br>
+							</div>
+							<div id="movingFrom">
+								<h5>Moving From</h5>
+								<input id="movingFromText" type="text" value="ZIP Code"><br>
+								<div id="zipCodeFinder">
+									<a href="www.zipcodefinder.com">ZIP Code Finder</a>
+								</div>
+							</div>
+							<div id="movingTo">
+								<h5>Moving To</h5>
+								<input id="movingToText" type="text" value="ZIP Code"><br>
+								<div id="zipCodeFinder">
+									<a href="www.zipcodefinder.com">ZIP Code Finder</a>
+								</div>
+							</div>
+							<div id="resTypeDiv">
+								<h5>Residence Type</h5>
+								<select id="residenceType" name="ResidenceType" value="Select">
+									<option value="Type 1">Type 1</option>
+									<option value="Type 2">Type 2</option>
+									<option value="Type 3">Type 3</option>
+									<option value="Type 4">Type 4</option>
+									<option value="Type 5">Type 5</option>
+								</select>
+							</div>
+							<div id="numOfRoomsDiv">
+								<h5># of Rooms</h5>
+								<select id="numberOfRooms" name="#ofRooms" value="Select">
+									<option value="Type 1">Type 1</option>
+									<option value="Type 2">Type 2</option>
+									<option value="Type 3">Type 3</option>
+									<option value="Type 4">Type 4</option>
+									<option value="Type 5">Type 5</option>
+								</select><br>
+							</div>
+							<input type="submit" class="continue" value="CONTINUE >>">
 						</div>
-						<div id="numOfRoomsDiv">
-							<h5># of Rooms</h5>
-							<select id="numberOfRooms" name="#ofRooms" value="Select">
-								<option value="Type 1">Type 1</option>
-								<option value="Type 2">Type 2</option>
-								<option value="Type 3">Type 3</option>
-								<option value="Type 4">Type 4</option>
-								<option value="Type 5">Type 5</option>
-							</select><br>
-						</div>
-						<input type="submit" class="continue" value="CONTINUE >>">
+						<div id="textField">
+							<h4>The Difference</h4>
+							<h5><b>Safety</b> - Our network consists of <span>only fully licensed &amp; insured</span> <span>movers.</span></h5>
+							<h5><b>Quality</b> - All moving companies <span>must pass our strict 28 point</span> <span>inspection process to ensure</span> quality service.</h5>
+							<h5><b>Security</b> - GigaMoves does not permit moving companies to <span>broker or sell customer</span><span>information.</span></h5>
+							<a href="www.privacy_policy.com">Privacy Policy</a>
 					</div>
-					<div id="textField">
-						<h4>The Difference</h4>
-						<h5><b>Safety</b> - Our network consists of only fully licensed &amp; insured <span>movers.</span></h5>
-						<h5><b>Quality</b> - All moving companies <span>must pass our strict 28 point</span> <span>inspection process to ensure</span> quality service.</h5>
-						<h5><b>Security</b> - GigaMoves does not permit moving companies to <span>broker or sell customer</span><span>information.</span></h5>
-						<a href="www.privacy_policy.com">Privacy Policy</a>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>
