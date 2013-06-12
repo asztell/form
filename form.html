@@ -30,14 +30,14 @@
 			
 			#container{
 				width:550px;
-				height:361px;
+				height:364px;
 				background-color:white;
 				margin:auto auto;
 			}
 			
 			#outer{
 				width:499px;
-				height:341px;
+				height:344px;
 				border:3px solid #c6d4e3;
 				border-radius:15px;
 				margin:auto auto;
@@ -52,7 +52,7 @@
 				border:3px solid #ffffff;
 				padding:24px;
 				width:445px;
-				height:287px;
+				height:291px;
 				margin:auto auto;
 			}
 
@@ -72,8 +72,12 @@
 			}
 			
 			#inputFields #moveDate{
-				margin-top:-6px;
+				margin-top:-10px;
 			}
+			
+			#moveDateTitle{
+				margin-top:18px;
+			 }
 			
 			#inputFields #moveDate input{
 				margin-top:-1px;
@@ -194,7 +198,7 @@
 				font-weight:bold;
 				padding:4px 15px;
 				margin:20px 0px;
-				margin-top:15px;
+				margin-top:225px;
 				text-decoration:none;
 				text-shadow:1px 1px 0px #ffffff;
 				background-image: -webkit-linear-gradient(top, #FFF8D6, #F2BF16);
@@ -231,7 +235,7 @@
 						<h3>Start getting your free moving quotes</h3>
 							<div id="inputFields">
 								<h5>Select Your Move Type</h5>
-								<select id="moveType" name="MoveType" value="Select">
+								<select id="moveType" name="MoveType" value="Select" placeholder="Select">
 									<option value="Type 1">Type 1</option>
 									<option value="Type 2">Type 2</option>
 									<option value="Type 3">Type 3</option>
@@ -239,10 +243,10 @@
 									<option value="Type 5">Type 5</option>
 								</select>
 								<a href="www.which_is_right.com">Which is right for me?</a><br>
-								<h5>Move Date (approximate)</h5>
+								<h5 id="moveDateTitle">Move Date (approximate)</h5>
 								<div id="moveDate">
-									<input id="month" type="text" value="Month">
-									<input id="day" type="text" value="Day">
+									<input id="month" type="text" value="Month" placeholder="Month">
+									<input id="day" type="text" value="Day" placeholder="Day">
 									<img id="calendar_icon" src="calendar_icon.jpg" alt="calendar" height="23" width="23"><br><br>
 								</div>
 								<div id="movingFrom">
@@ -279,15 +283,15 @@
 										<option value="Type 5">Type 5</option>
 									</select><br>
 								</div>
-								<input type="submit" class="continue" value="CONTINUE >>">
 							</div>
+							<input type="submit" class="continue" value="CONTINUE >>">
 							<div id="textField">
 								<h4>The Difference</h4>
 								<h5><b>Safety</b> - Our network consists of <span>only fully licensed &amp; insured</span> <span>movers.</span></h5>
 								<h5><b>Quality</b> - All moving companies <span>must pass our strict 28 point</span> <span>inspection process to ensure</span> quality service.</h5>
 								<h5><b>Security</b> - GigaMoves does not permit moving companies to <span>broker or sell customer</span><span>information.</span></h5>
 								<a href="www.privacy_policy.com">Privacy Policy</a>
-						</div>
+							</div>
 					</form>
 				</div>
 			</div>
