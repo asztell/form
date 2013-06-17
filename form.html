@@ -2,23 +2,23 @@
 <html>
 	<head><title>FORM</title>
 		<script type="text/javascript">
-			$("#moveType").change(function () {
+			$("#moveType").change1(function () {
 				if($(this).val() == "0") $(this).addClass("empty1");
 				else $(this).removeClass("empty1")
 			});
-			$("#moveType").change();
+			$("#moveType").change1();
 
-			$("#residenceType").change(function () {
+			$("#residenceType").change2(function () {
 				if($(this).val() == "0") $(this).addClass("empty2");
 				else $(this).removeClass("empty2")
 			});
-			$("#residenceType").change();
+			$("#residenceType").change2();
 
-			$("#numberOfRooms").change(function () {
+			$("#numberOfRooms").change3(function () {
 				if($(this).val() == "0") $(this).addClass("empty3");
 				else $(this).removeClass("empty3")
 			});
-			$("#numberOfRooms").change();
+			$("#numberOfRooms").change3();
 		</script>
 		<style type="text/css">
 
@@ -32,7 +32,7 @@
 				margin:1px 0;
 			}
 
-			span{
+			#textField span{
 				display:block;
 			}
 
@@ -49,14 +49,14 @@
 
 			#container{
 				width:550px;
-				height:364px;
+				height:361px;
 				background-color:white;
 				margin:auto auto;
 			}
 
 			#outer{
 				width:499px;
-				height:344px;
+				height:341px;
 				border:3px solid #c6d4e3;
 				border-radius:15px;
 				margin:auto auto;
@@ -71,7 +71,7 @@
 				border:3px solid #ffffff;
 				padding:24px;
 				width:445px;
-				height:291px;
+				height:288px;
 				margin:auto auto;
 			}
 
@@ -127,10 +127,15 @@
 				margin-top:18px;
 			 }
 
+			#moveDateTitle span{
+				font-size:10px;
+				color:#6c6c62;
+			}
+			 
 			#moveDate input{
 				margin-top:-1px;
 			}
-
+			
 			#day{
 				width:30px;
 			}
@@ -194,7 +199,7 @@
 				position:relative;
 				float:right;
 				width:200px;
-				height:268px;
+				height:265px;
 				color:black;
 				background-color:white;
 				border:1px solid #eeddff;
@@ -207,7 +212,7 @@
 
 			#textField h4{
 				margin:9px 0px;
-
+				color:#6c6c62;
 			}
 
 			#textField h5 {
@@ -240,13 +245,13 @@
 				-moz-border-radius:12px;
 				-webkit-border-radius:12px;
 				border-radius:12px;
-				border:2.5px solid #3e7693;
+				border:2.5px solid #196387;
 				display:inline-block;
-				color:#3e769e;
+				color:#196387;
 				font-family:arial;
 				font-size:15px;
 				font-weight:bold;
-				padding:4px 15px;
+				padding:6px 16px 4.5px 16px;
 				margin-left:-102px;
 				margin-top:80px;
 				text-decoration:none;
@@ -293,7 +298,7 @@
 								<option value="Type 4">Type 4</option>
 							</select>
 							<a href="www.which_is_right.com">Which is right for me?</a><br>
-							<h5 id="moveDateTitle">Move Date (approximate)</h5>
+							<h5 id="moveDateTitle">Move Date <span>(approximate)</span></h5>
 							<div id="moveDate">
 								<input id="month" type="text" placeholder="Month">
 								<input id="day" type="text" placeholder="Day">
